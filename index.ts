@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create a link element to trigger the download
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
-        link.download = "resume.html";  // Set the filename for the download
+        link.download = "iqra.html";  // Set the filename for the download
         link.click();  // Trigger the download
     });
 });
