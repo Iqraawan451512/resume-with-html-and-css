@@ -54,3 +54,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Get elements by their IDs
+    const toggleSkillsButton = document.getElementById('toggleSkills') as HTMLButtonElement;
+    const skillsSection = document.getElementById('skillsSection') as HTMLElement;
+
+    // Set the initial state of the skills section (visible on page load)
+    skillsSection.style.display = 'block'; // Show the skills section initially
+    toggleSkillsButton.textContent = 'Hide Skills'; // Set the button text to "Hide Skills"
+
+    // Add event listener to the button to toggle visibility
+    toggleSkillsButton.addEventListener('click', () => {
+        if (skillsSection.style.display === 'none') {
+            skillsSection.style.display = 'block';
+            toggleSkillsButton.textContent = 'Hide Skills';
+        } else {
+            skillsSection.style.display = 'none';
+            toggleSkillsButton.textContent = 'Show Skills';
+        }
+    });
+});
+
+
