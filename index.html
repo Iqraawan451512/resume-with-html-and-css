@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resume</title>
+    <style>
+        /* Your existing CSS styles here */
+        body {
+            background-image: url(https://img.freepik.com/premium-vector/blue-lines-abstract-digital-background_573335-63.jpg);
+            background-size: cover;
+            color: #9a8c98;
+            
+
+        }
+      
+
+        /* All other CSS rules */
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="res">
-    <h1 class="RESUME">RESUME</h1>
+    <div id="resume" class="resume-container">
+        <h1 class="RESUME">RESUME</h1>
 
     <div class="main">
 
         <div class="sub-div-2">
            <img src="https://static2.bigstockphoto.com/2/2/4/large1500/422322161.jpg" alt="profile picture" class="picture">
             <h1>IQRA AWAN</h1>
-            <p>Business Student </p><br>
+            <p class="bus">Business Student </p><br>
            <a href="https://mail.google.com/mail" target="_blank" > <input type="text" placeholder=" www.iqraawan451512@gmail.com"class="tag"></a><br>
 <a href=""  ><input type="text" placeholder="03341347768" class="tag"></a><br>
 <a href="https://github.com/Iqraawan451512"  target="_blank"><input type="text" placeholder="Github" class="tag"></a><br>
@@ -160,6 +187,12 @@
             </div>
             <div class="btn">
             <button id="toggleSkills">Show Skills</button>
+
+            <button id="downloadBtn">Downloads</button>
+
+            
+            
+            
 </div>
 
            </div>
@@ -169,6 +202,21 @@
     </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="index.js"></script>
 
